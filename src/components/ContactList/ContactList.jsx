@@ -1,9 +1,11 @@
 import { useSelector } from "react-redux";
+
 import {visibleContacts} from '../../redux/contactsSlice'
 import css from "./ContactList.module.css";
 import ContactItem from "../Contact/Contact";
 
 export default function ContactList() {
+
   const filtrContacts = useSelector(visibleContacts);
   ;
   return (
